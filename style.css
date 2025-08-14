@@ -111,6 +111,7 @@ section {
 
 #about {
   background-color: #0a0f24;
+  padding-bottom: 3rem; /* responsive-friendly */
 }
 
 /* Embedded Video in About Me */
