@@ -111,7 +111,8 @@ section {
 
 #about {
   background-color: #0a0f24;
-  padding-bottom: 3rem; /* responsive-friendly */
+  padding-bottom: 4rem; /* Internal padding */
+  margin-bottom: 4rem;  /* External space to separate from next section */
 }
 
 /* Embedded Video in About Me */
