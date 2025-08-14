@@ -148,24 +148,27 @@ section {
 
 /* Intro Video Section */
 #intro-video {
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 4rem; /* extra padding at bottom */
   text-align: center;
-  background-color: #f9f9f9; /* Light background to separate from other sections */
+  background-color: #0b0e1a; /* matches dark theme sections */
+  color: #ffffff; /* matches text color in dark sections */
 }
 
 #intro-video h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: #222; /* You can change to your palette’s heading color */
+  color: #00bcd4; /* accent color from your palette */
 }
 
 .video-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   position: relative;
   padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
+  border-radius: 10px; /* smooth edges */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* matches card shadows */
 }
 
 .video-container iframe {
