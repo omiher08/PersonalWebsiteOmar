@@ -146,29 +146,30 @@ section {
   color: #ddd;
 }
 
-/* Intro Video Section */
+/* Author's Introduction Video Section */
 #intro-video {
-  padding: 3rem 1rem 4rem; /* extra padding at bottom */
+  background-color: #0d132b; /* fits between about (#0a0f24) and projects (#111831) */
+  padding: 5rem 2rem 6rem; /* extra bottom padding so it doesn't stick to projects */
   text-align: center;
-  background-color: #0b0e1a; /* matches dark theme sections */
-  color: #ffffff; /* matches text color in dark sections */
 }
 
 #intro-video h2 {
-  font-size: 2rem;
+  color: #00ffff;
   margin-bottom: 1.5rem;
-  color: #00bcd4; /* accent color from your palette */
+  font-size: 2.2rem;
+  border-bottom: 2px solid #00ffff;
+  padding-bottom: 0.5rem;
 }
 
 .video-container {
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
   overflow: hidden;
-  border-radius: 10px; /* smooth edges */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* matches card shadows */
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
 }
 
 .video-container iframe {
