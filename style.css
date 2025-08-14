@@ -113,6 +113,27 @@ section {
   background-color: #0a0f24;
 }
 
+/* Embedded Video in About Me */
+#about .video-container {
+  max-width: 800px;
+  margin: 2rem auto 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+}
+
+#about .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 #projects {
   background-color: #111831;
 }
@@ -144,41 +165,6 @@ section {
   font-size: 1.1rem;
   margin-bottom: 1.2rem;
   color: #ddd;
-}
-
-/* Author's Introduction Video Section */
-#intro-video {
-  background-color: #0d132b; /* fits between about (#0a0f24) and projects (#111831) */
-  padding: 5rem 2rem 6rem; /* extra bottom padding so it doesn't stick to projects */
-  text-align: center;
-}
-
-#intro-video h2 {
-  color: #00ffff;
-  margin-bottom: 1.5rem;
-  font-size: 2.2rem;
-  border-bottom: 2px solid #00ffff;
-  padding-bottom: 0.5rem;
-}
-
-.video-container {
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 ratio */
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
 }
 
 /* Project List */
