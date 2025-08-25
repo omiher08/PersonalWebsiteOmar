@@ -194,6 +194,35 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Skills Section */
+.skills {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.skills h3 {
+  color: #00ffff;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 4rem;
+}
+
+.skills-icons i {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.skills-icons i:hover {
+  transform: scale(1.2);
+  color: #00cccc;
+}
+
+
 /* === Responsive Tweaks === */
 
 /* Tablet & Below */
