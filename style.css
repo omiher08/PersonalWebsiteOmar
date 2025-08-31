@@ -104,6 +104,14 @@ header {
   box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
 }
 
+/* Blog Section */
+#blog {
+  background-color: #0d132b;
+  padding-bottom: 5rem; /* extra padding to create clear space before contact */
+  margin-bottom: 5rem;
+  border-bottom: 2px solid rgba(0, 255, 255, 0.3); /* visual divider */
+}
+
 /* Blog Entries */
 .blog-entries {
   display: grid;
@@ -113,17 +121,17 @@ header {
 }
 
 .blog-card {
-  background-color: #111831;
+  background: linear-gradient(145deg, #16213e, #1a1f3d); /* slightly lighter than main bg */
   padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 255, 255, 0.15);
-  border: 1px solid rgba(0, 255, 255, 0.2); /* clear square look */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.15);
+  border: 1px solid rgba(0, 255, 255, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .blog-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 28px rgba(0, 255, 255, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 255, 255, 0.3);
 }
 
 .blog-card h3 {
@@ -132,14 +140,23 @@ header {
 }
 
 .blog-card p {
-  color: #ddd;
+  color: #e0e0e0;
   margin-bottom: 1.5rem;
 }
 
-/* Add separation between blog and contact */
-#blog {
-  background-color: #0d132b;
-  margin-bottom: 4rem; /* creates space before contact section */
+/* "See More" button */
+.blog-card .btn {
+  background-color: #00ffff;
+  color: #0d132b;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.blog-card .btn:hover {
+  background-color: #00cccc;
 }
 
 /* Section Layouts */
