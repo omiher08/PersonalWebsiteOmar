@@ -115,8 +115,15 @@ header {
 .blog-card {
   background-color: #111831;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 255, 255, 0.15);
+  border: 1px solid rgba(0, 255, 255, 0.2); /* clear square look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 28px rgba(0, 255, 255, 0.25);
 }
 
 .blog-card h3 {
@@ -127,6 +134,12 @@ header {
 .blog-card p {
   color: #ddd;
   margin-bottom: 1.5rem;
+}
+
+/* Add separation between blog and contact */
+#blog {
+  background-color: #0d132b;
+  margin-bottom: 4rem; /* creates space before contact section */
 }
 
 /* Section Layouts */
